@@ -109,6 +109,3 @@ This project is licensed under the MIT License — free to use and modify.
 
 ---
 
-Would you like me to also make a **dark-themed CSS** version for your student management app UI (modern card-style form + table)?  
-It’ll make your GitHub project look more professional visually.
-
