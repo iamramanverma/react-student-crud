@@ -1,0 +1,215 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* ====== Global Styles ====== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1d1e20, #232324);
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+}
+
+/* ====== App Container ====== */
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px 25px;
+  width: 450px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* ====== Input Form ====== */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  background: #fff;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.7);
+}
+
+button {
+  background-color: #48bb78;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #38a169;
+}
+
+/* ====== Table Styles ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+th {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  border-radius: 5px;
+}
+
+td {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 15px;
+}
+
+td button {
+  margin: 3px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+td button:first-child {
+  background-color: #3182ce;
+}
+
+td button:first-child:hover {
+  background-color: #2b6cb0;
+}
+
+td button:last-child {
+  background-color: #e53e3e;
+}
+
+td button:last-child:hover {
+  background-color: #c53030;
+}
+
+/* ====== Empty Message ====== */
+p {
+  color: #fff;
+  font-style: italic;
+  margin-top: 20px;
+}
+/* ====== Student Item Styling ====== */
+
+.student-row td {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+
+.student-row:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transition: background 0.3s ease-in-out;
+}
+
+/* ====== Action Buttons ====== */
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  outline: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-btn {
+  background-color: #3182ce;
+}
+
+.edit-btn:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background-color: #e53e3e;
+}
+
+.delete-btn:hover {
+  background-color: #c53030;
+  transform: scale(1.05);
+}
